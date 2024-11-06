@@ -1,0 +1,9 @@
+onnxruntime
+# onnxruntime-gpu
+phonemizer
+scipy
+unidecode
+fastapi
+soundfile
+huggingface_hub[cli]
+uvicorn
