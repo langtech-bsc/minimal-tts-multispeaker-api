@@ -41,7 +41,7 @@ COPY --chown=user requirements.txt $HOME/app/
 RUN pip install -r requirements.txt
 
 # download from hf hub
-RUN huggingface-cli download projecte-aina/matxa-tts-cat-multispeaker matcha_hifigan_simply.onnx --local-dir  $HOME/app/
+RUN huggingface-cli download projecte-aina/matxa-tts-cat-multispeaker matcha_wavenext_simply.onnx --local-dir  $HOME/app/
 RUN huggingface-cli download projecte-aina/matxa-tts-cat-multispeaker config.yaml --local-dir  $HOME/app/
 
 COPY --chown=user . $HOME/app/
