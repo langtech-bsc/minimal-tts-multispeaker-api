@@ -17,7 +17,7 @@ DEFAULT_SPEAKER_ID = os.environ.get("DEFAULT_SPEAKER_ID", default=20)
 SAMPLE_RATE = 22050
 
 # Load models and configs
-MODEL_PATH_MATCHA_E2E = "matcha_hifigan_simply.onnx"
+MODEL_PATH_MATCHA_E2E = "matcha_wavenext_simply.onnx"
 CONFIG_PATH = "config.yaml"
 SPEAKER_ID_DICT = "spk_to_id.json"  # CHECK A DICT
 
