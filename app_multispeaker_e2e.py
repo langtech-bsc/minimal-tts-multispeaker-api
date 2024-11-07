@@ -108,7 +108,7 @@ async def generate_audio(text: str, spk_id: int,
     infer_secs = perf_counter() - t0
     sr_out = 22050
 
-    wav_length = wav.shape[2]  # num of samples  [1]
+    wav_length = wav.shape[1]  # num of samples  [2] hifigan
     wav_secs = wav_length / sr_out
     print(f"Inference seconds: {infer_secs}")
     print(f"Generated wav seconds: {wav_secs}")
