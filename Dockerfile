@@ -51,6 +51,5 @@ USER root
 RUN chown -R user:user $HOME/app
 USER user
 
-EXPOSE 7860
-
+EXPOSE 8000
 CMD ["python3", "-u", "app_multispeaker_e2e.py"]
